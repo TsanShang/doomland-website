@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>末日荒原伺服器</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="社群.html">社群</a></li>
+                <li><a href="商店.html">商店</a></li>
+                <li><a href="遊戲指南.html">遊戲指南</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>快來加入末日荒原伺服器吧！</h1>
+        <p>全版本支援，提供便捷的插件，打造你的末日世界！</p>
+        <a href="https://discord.gg/fwM3Ed5P" class="btn">加入我們的 Discord</a>
+    </section>
+
+    <section>
+        <h2>來看看如何加入</h2>
+        <div class="bg-white p-6 rounded-2xl shadow-md text-center max-w-md mx-auto mt-6">
+            <p class="text-lg font-semibold text-gray-700 mb-2">伺服器 IP</p>
+            <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden">
+                <input type="text" id="copyText" value="mc.doomland.ddns-ip.net" 
+                    class="w-full px-4 py-2 text-gray-700 bg-gray-100 outline-none cursor-default" readonly>
+                <button onclick="copyToClipboard()" 
+                        class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 transition">
+                    複製
+                </button>
+            </div>
+            <p id="copyMsg" class="text-green-500 mt-2 hidden">✅ 已複製到剪貼簿！</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-md text-center max-w-md mx-auto mt-6">
+            <p class="text-lg font-semibold text-gray-700 mb-2">伺服器 Port</p>
+            <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden">
+                <input type="text" id="copyText" value="24037" 
+                    class="w-full px-4 py-2 text-gray-700 bg-gray-100 outline-none cursor-default" readonly>
+                <button onclick="copyToClipboard()" 
+                        class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 transition">
+                    複製
+                </button>
+            </div>
+            <p id="copyMsg" class="text-green-500 mt-2 hidden">✅ 已複製到剪貼簿！</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Java版加入方式:</h2>
+        <img src="java.png" alt="伺服器 Java">
+    </section>
+
+    <section>
+        <h2>Bedrock版加入方式:</h2>
+        <img src="bedrock.png" alt="伺服器 bedrock">
+    </section>
+
+    <footer>
+        <p>&copy; 2025 末日荒原伺服器. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
